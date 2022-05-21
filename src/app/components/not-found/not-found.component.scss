@@ -1,0 +1,236 @@
+@import "../../../styles";
+.not-found-page{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 5px;
+
+  background: #1A2980;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  overflow: hidden;
+  @include flex-center(row , nowrap);
+
+  .star-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .star{
+      display: block;
+      width: 20px;
+      height: 20px;
+      //clip-path: circle(50% at 50% 50%);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+      position: absolute;
+      &:nth-of-type(1){
+        width: 30px;
+        height: 30px;
+        top: 15%;
+        left: 10%;
+        background: #076585;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-forward 1.5s ease-in-out infinite alternate 1ms;
+      }
+      &:nth-of-type(2){
+        top: 5%;
+        left: 85%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-reverse 1.5s ease infinite alternate 0.5s;
+
+      }
+      &:nth-of-type(3){
+        top: 45%;
+        left: 45%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-forward 1.5s ease infinite alternate 0.5s;
+
+      }
+      &:nth-of-type(4){
+        top: 65%;
+        left: 25%;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-reverse 1.5s ease infinite alternate 0.5s;
+
+
+      }
+      &:nth-of-type(5){
+        top: 75%;
+        left: 75%;
+        background: #314755;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-forward 1.5s ease infinite alternate 0.5s;
+
+
+      }
+      &:nth-of-type(6){
+        top: 40%;
+        left: 15%;
+        background: #00416A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-reverse 1.5s ease infinite alternate 0.5s;
+
+      }
+      &:nth-of-type(7){
+        top: 50%;
+        left: 85%;
+        background: #314755;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: star-blink-forward 1.5s ease infinite alternate 0.5s;
+
+      }
+    }
+
+  }
+  .not-found-container{
+    @include flex-center(column, nowrap);
+    text-align: center;
+    .number404{
+      margin-bottom: 30px;
+      @include flex-center(row, nowrap);
+      font-size: 15rem;
+      color: #e0dfdc;
+      letter-spacing: .1em;
+      text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+      .number404-child {
+        color: #076585;
+        display: inline-block;
+        &:nth-child(1){
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+
+          -webkit-transform: rotateX(-30deg) rotateY(15deg);
+          -moz-transform: rotateX(-30deg) rotateY(15deg);
+          -ms-transform: rotateX(-30deg) rotateY(15deg);
+          -o-transform: rotateX(-30deg) rotateY(15deg);
+          transform:  rotateX(-30deg) rotateY(15deg);
+        }
+        &:nth-child(2){
+          position: relative;
+
+          -webkit-transform: rotateX(-30deg) rotateY(12deg) rotateZ(11deg) translateX(17px) translateY(-7px) translateZ(-12px) skewX(25deg) skewY(-2deg);
+          -moz-transform: rotateX(-30deg) rotateY(12deg) rotateZ(11deg) translateX(17px) translateY(-7px) translateZ(-12px) skewX(25deg) skewY(-2deg);
+          -ms-transform: rotateX(-30deg) rotateY(12deg) rotateZ(11deg) translateX(17px) translateY(-7px) translateZ(-12px) skewX(25deg) skewY(-2deg);
+          -o-transform: rotateX(-30deg) rotateY(12deg) rotateZ(11deg) translateX(17px) translateY(-7px) translateZ(-12px) skewX(25deg) skewY(-2deg);
+          transform:  rotateX(-30deg) rotateY(12deg) rotateZ(11deg) translateX(17px) translateY(-7px) translateZ(-12px) skewX(25deg) skewY(-2deg);
+          .hat{
+            position: absolute;
+            width: 80%;
+            height: 25%;
+            top: 0;
+            left: 0;
+          }
+        }
+        &:nth-child(3){
+
+
+
+          -webkit-transform: rotateX(-25deg) rotateY(44deg) rotateZ(11deg) translateX(17px) translateY(27px) translateZ(-16px) skewX(-7deg) skewY(12deg);
+          -moz-transform: rotateX(-25deg) rotateY(44deg) rotateZ(11deg) translateX(17px) translateY(27px) translateZ(-16px) skewX(-7deg) skewY(12deg);
+          -ms-transform: rotateX(-25deg) rotateY(44deg) rotateZ(11deg) translateX(17px) translateY(27px) translateZ(-16px) skewX(-7deg) skewY(12deg);
+          -o-transform: rotateX(-25deg) rotateY(44deg) rotateZ(11deg) translateX(17px) translateY(27px) translateZ(-16px) skewX(-7deg) skewY(12deg);
+          transform:  rotateX(-25deg) rotateY(44deg) rotateZ(11deg) translateX(17px) translateY(27px) translateZ(-16px) skewX(-7deg) skewY(12deg);
+        }
+      }
+    }
+    .not-found-title{
+      color: rgba(255,255,255,.3);
+      text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+      border-radius: 5px;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+  .moon{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    animation: moon 1.5s linear infinite alternate 1ms;
+  }
+  .cat{
+    width:10% ;
+    height:15%;
+  }
+}
+
+@keyframes moon {
+  0%{
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0.5;
+  }
+
+}
+@keyframes star-blink-forward {
+  0%{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+@keyframes star-blink-reverse {
+  0%{
+    transform: scale(0.8);
+    opacity: 0.8;
+
+  }
+  50%{
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  100%{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+}
+
+@media screen and (max-width: 724px) {
+  .not-found-container{
+    .number404{
+      margin-top: 60px;
+      font-size: 9rem!important;
+    }
+    .not-found-title{
+      font-size: 2rem!important;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .not-found-container{
+    .number404{
+      font-size: 6.5rem!important;
+    }
+  }
+  .cat{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    width:10% ;
+    height:15%;
+  }
+}

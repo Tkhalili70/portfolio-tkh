@@ -1,0 +1,86 @@
+@import "../../../styles";
+.skills-page{
+  transition: all 500ms ease-in-out;
+  width: 100%;
+  min-height: 100vh;
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @include flex-center(column , nowrap);
+  .skill-container{
+    padding: 15px;
+    width: 90%;
+    min-height: 400px;
+    margin: 5px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #428ebe;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(25, 22, 84, 0.93), #428ebe);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(25, 22, 84, 0.94), #428ebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .field-info{
+      width: 48%;
+      margin-right: 2%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      .field{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        color: rgba(242, 242, 248, 0.85);
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        .field-title{
+
+        }
+        .field-percentage{
+
+        }
+      }
+
+      .progress-bar{
+        width: 100%;
+        height: 5px;
+        background: #E0EAFC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        position: relative;
+        .success-bar{
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          background: #2193b0;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .skills-page {
+    min-height: unset;
+    .skill-container {
+      .field-info {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .skill-container{
+    .field-info{
+      width: 100% !important;
+    }
+  }
+}

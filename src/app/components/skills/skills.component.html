@@ -1,0 +1,15 @@
+<div class="skills-page">
+  <div class="title">Skills</div>
+  <div class="skill-container ">
+    <div class="field-info reveal" *ngFor="let skill of skills">
+      <div class="field">
+        <div class="field-title">{{skill.title}}</div>
+        <div class="field-percentage">{{skill.percentage}} %</div>
+      </div>
+      <div class="progress-bar">
+        <div class="success-bar" [style]="{width:skill.percentage+'%'}"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

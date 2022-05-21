@@ -1,0 +1,184 @@
+.first-page{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../assets/img/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-pic-container{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    box-shadow: inset -1px -1px 54px 4px rgba(121, 8, 98, 0.92);
+    -webkit-box-shadow:inset -1px -1px 54px 4px rgba(121, 8, 98, 0.92);
+    -moz-box-shadow:inset -1px -1px 54px 4px rgba(121, 8, 98, 0.92);
+    -webkit-clip-path: polygon(15% 0, 87% 0, 100% 13%, 100% 90%, 85% 100%, 13% 100%, 0 90%, 0 14%);
+    clip-path: polygon(15% 0, 87% 0, 100% 13%, 100% 90%, 85% 100%, 13% 100%, 0 90%, 0 14%);
+  }
+  figcaption{
+    width: 100%;
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    p:first-child{
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0 rgba(121, 8, 98, 0.92), 2px -2px 0 rgba(121, 8, 98, 0.92), -2px 2px 0 rgba(121, 8, 98, 0.92), -2px -2px 0 rgba(7, 73, 114, 0.92), 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    }
+    p:last-child{
+      color: rgba(255, 255, 255, 0.92);
+      color: #FFFFFF;
+      text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    }
+    }
+}
+.logo-container{
+  width: 100%;
+  height: 200px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    animation: logo 1.5s ease forwards alternate 0.5s , logoAnimate 1.5s ease infinite alternate 1.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px rgba(246, 240, 240, 0.61), 0px 2px 20px 3px rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 10px 13px -7px rgba(236, 226, 226, 0.38), 0px 2px 20px 3px rgba(255, 255, 255, 0.35);
+    &:nth-child(odd){
+    align-self: flex-end;
+    }
+    &:nth-child(even) {
+      align-self: center;
+    }
+
+  }
+
+}
+@keyframes logo {
+  from {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+  to {
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
+  }
+}
+@keyframes logoAnimate {
+  from {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(5%);
+    transform: translateY(5%);
+  }
+}
+.btn-container{
+  width: 100%;
+  text-align: center;
+  .btn-download{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition: all 300ms ease-in;
+    &:hover{
+
+      background: #9796f0;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #360033;
+    }
+  }
+
+}
+.social-media{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 2px;
+  bottom: 0;
+  width: 30px;
+  height: 200px;
+  cursor: pointer;
+    svg{
+      width: 100%;
+      min-height: 40px;
+      border-radius: 50%;
+      transition: all 500ms ease-in-out;
+      &:hover{
+        fill: #783b8f;
+      }
+    }
+
+
+}
+@media screen and (max-width: 724px) {
+  .logo-container{
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+}
+@media screen and (max-width: 300px) {
+  .logo-container{
+    .logo{
+      width: 50px;
+      height: 50px;
+
+    }
+
+  }
+
+  .social-media{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

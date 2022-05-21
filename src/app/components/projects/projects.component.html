@@ -1,0 +1,21 @@
+<div class="projects-page">
+  <div class="title">Projects</div>
+  <div class="project-container" >
+    <div class="projects-pictures">
+      <div  class="item item0" >
+      </div>
+      <div  class="item item1">
+      </div>
+      <div  class="item item2">
+      </div>
+      <div  class="item item3">
+      </div>
+      <div  class="item item4" >
+      </div>
+    </div>
+    <div class="projects-slider">
+      <app-image-slider (clickOnItemGit)="onClickOnImage($event)" (clickOnItemPreview)="onClickOnImage($event)" [data]="projects" >
+      </app-image-slider>
+    </div>
+  </div>
+</div>

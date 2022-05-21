@@ -1,0 +1,40 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnused": [
+    "@angular/material",
+    "@angular/platform-browser-dynamic",
+    "@angular/router",
+    "@fortawesome/fontawesome-free",
+    "material-icons",
+    "tslib"
+  ],
+  "ignoreUnimported": [
+    "F:/angular-projects/portfolio-tkh/src/app/app.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/app.module.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/app.routing.module.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/about/about.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/contact/contact.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/education/education.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/experience/experience-child/experience-child.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/experience/experience.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/first-page/first-page.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/header/header.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/home/home.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/image-slider/image-slider.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/not-found/not-found.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/profile-pic/profile-pic.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/projects/projects.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/services/mail.service.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/components/skills/skills.component.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/directives/tooltip.directive.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/models/degree.model.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/models/experience.model.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/models/project.model.ts",
+    "F:/angular-projects/portfolio-tkh/src/app/models/skill.model.ts",
+    "F:/angular-projects/portfolio-tkh/src/environments/environment.prod.ts",
+    "F:/angular-projects/portfolio-tkh/src/environments/environment.ts",
+    "F:/angular-projects/portfolio-tkh/src/main.ts",
+    "F:/angular-projects/portfolio-tkh/src/polyfills.ts",
+    "F:/angular-projects/portfolio-tkh/src/test.ts"
+  ]
+}

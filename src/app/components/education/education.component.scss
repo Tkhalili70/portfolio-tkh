@@ -1,0 +1,108 @@
+@import "../../../styles.scss";
+
+.education-page{
+  min-height: 100vh;
+  width: 100%;
+  background: #5C258D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  @include flex-center(column , nowrap);
+  .education-container{
+    @include flex-center(row, nowrap);
+    width: 90%;
+    margin: 30px auto;
+
+  .each-degree-info{
+    width: 33%;
+    margin-right: 1%;
+    min-height: 350px;
+    border-radius: 20px;
+    background: #20002c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    .degree{
+      position: relative;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      padding: 5px;
+      background: #41295a;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      width: 100%;
+      height: 25%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      color: white;
+      font-size: 1.3rem;
+      text-align: center;
+      .certificate-logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        transition: all 500ms ease-in-out;
+        &:hover{
+          fill: rgba(85, 245, 190, 0.77);
+          fill-opacity: 1;
+          transform: scale(1.1,1.1)	;
+        }
+      }
+    }
+    .degree-detail{
+      font-family: "Arial Black", Gadget, sans-serif;
+      text-transform: capitalize;
+      font-variant: small-caps;
+      padding: 20px;
+      height: 75%;
+      text-align: center;
+      //color: rgba(10, 10, 59, 0.85);
+
+
+      color: #f3f5f6;
+      text-shadow: 2px 2px 0 rgba(96, 10, 79, 0.92), 2px -2px 0 rgba(121, 8, 98, 0.92), -2px 2px 0 rgba(96, 10, 79, 0.92), -2px -2px 0 rgba(121, 8, 98, 0.92), 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.3rem;
+
+    }
+  }
+
+}
+}
+
+
+@media screen and (max-width: 950px) {
+  .education-page{
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 724px) {
+  .education-page{
+    //min-height: unset;
+    .education-container{
+      width: 90%;
+      flex-direction: column!important;
+      justify-content: center;
+      .each-degree-info{
+        width: 100% !important;
+        margin-top: 15px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+        .degree{
+          font-size: 1rem!important;
+        }
+        .degree-detail {
+          font-size: 1rem!important;
+        }
+      }
+
+    }
+  }
+
+}

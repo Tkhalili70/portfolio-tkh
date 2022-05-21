@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "portifolio-tkh": {
+    "portfolio-tkh": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portifolio-tkh",
+            "outputPath": "dist/portfolio-tkh",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -68,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portifolio-tkh:build:production"
+              "browserTarget": "portfolio-tkh:build:production"
             },
             "development": {
-              "browserTarget": "portifolio-tkh:build:development"
+              "browserTarget": "portfolio-tkh:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "portifolio-tkh:build"
+            "browserTarget": "portfolio-tkh:build"
           }
         },
         "test": {
@@ -94,7 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -102,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "portifolio-tkh"
+  "defaultProject": "portfolio-tkh"
 }

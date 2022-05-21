@@ -1,0 +1,127 @@
+.about-page{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .basic-info{
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    min-height: 200px;
+    border: 2px dotted white;
+
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #65bad9, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #5daac5, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    img{
+    width: 25%;
+    height: 100%;
+  }
+  h3{
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0 rgba(121, 8, 98, 0.92), 2px -2px 0 rgba(121, 8, 98, 0.92), -2px 2px 0 rgba(121, 8, 98, 0.92), -2px -2px 0 rgba(7, 73, 114, 0.92), 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  }
+    .question{
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 rgba(10, 10, 59, 0.85), 2px -2px 0 rgba(10, 10, 59, 0.85), -2px 2px 0 rgba(10, 10, 59, 0.85), -2px -2px 0 rgba(7, 73, 114, 0.92), 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    }
+    .answer{
+      font-style: italic;
+    }
+
+}
+  .more-about-me{
+    width: 90%;
+    min-height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #acb6e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgba(96, 10, 79, 0.92);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+  }
+}
+@media screen and (max-width: 950px) {
+  .about-page {
+    min-height: 600px;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .about-page {
+    flex-direction: column;
+    .basic-info {
+      flex-direction: row;
+      text-indent: 0;
+      margin-top: 0;
+      width: 90%;
+      align-self: center;
+      color: #360033;
+      img {
+        margin-right: auto;
+        align-self: self-start;
+        width: 25%;
+      }
+
+      h3 {
+        text-shadow: none;
+      }
+      .question{
+        font-size: 0.8rem;
+        text-shadow: none;
+        color: white;
+      }
+      .answer{
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+    }
+    .more-about-me{
+      font-size: 1rem;
+      line-height: 1.6;
+
+    }
+
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-page {
+    min-height: unset;
+    justify-content: center;
+    .basic-info {
+      flex-direction: column;
+      width: 100%;
+
+    }
+    .more-about-me{
+      width: 100%;
+    }
+
+  }
+}
+
+

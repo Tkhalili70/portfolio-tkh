@@ -1,0 +1,133 @@
+@import "../../../styles";
+.projects-page{
+  width: 100%;
+  min-height: 100vh;
+
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @include flex-center(column , nowrap);
+  .project-container{
+    @include flex-center(row , wrap);
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    min-height: 450px;
+    height: auto;
+    .projects-pictures{
+      padding: 10px;
+      width: 50%;
+      min-height: 450px;
+      //background: blue;
+      margin-right: auto;
+
+      display: grid;
+
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      gap: 0;
+        .item{
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position:100% 100%;
+          background-repeat: no-repeat;
+          clip-path: circle(50% at 50% 50%);
+          transition: all 500ms linear;
+          opacity:0.8;
+          &:hover{
+            opacity: 1;
+            -ms-transform: rotateX(2deg) rotateY(3deg) translateX(0px) translateY(0px) scale(1.1) skewX(2deg) skewY(2deg);
+            transform:  rotateX(2deg) rotateY(3deg) translateX(0px) translateY(0px) scale(1.1) skewX(2deg) skewY(2deg);
+          }
+        }
+        .item0 {
+          background-image: url("../../../assets/img/angular-background.png");
+          background-position:50% 50% !important;
+          grid-row-start: 1;
+          grid-column-start: 1;
+          grid-row-end: 2;
+          grid-column-end: 4;
+        }
+
+        .item1 {
+          grid-row-start: 2;
+          grid-column-start: 2;
+          grid-row-end: 4;
+          grid-column-end: 4;
+          background-image: url("../../../assets/img/background3.jpg");
+          background-position:80% 50% !important;
+          width: 90%;
+          height: 90%;
+          margin: auto;
+        }
+        .item2 {
+          grid-row-start: 1;
+          grid-column-start: 4;
+          grid-row-end: 4;
+          grid-column-end: 5;
+          background-position:20% 60% !important;
+          background-image: url("../../../assets/img/programming.jpg");
+        }
+        .item3 {
+          grid-row-start: 2;
+          grid-column-start: 1;
+          grid-row-end: 5;
+          grid-column-end: 2;
+          background-position:70% 30% !important;
+          background-image: url("../../../assets/img/frontendbackend-min.jpg");
+
+        }
+        .item4 {
+          grid-row-start: 4;
+          grid-column-start: 2;
+          grid-row-end: 5;
+          grid-column-end: 5;
+          background-image: url("../../../assets/img/front-end-developer.png");
+          background-position:40% 40% !important;
+
+
+        }
+
+
+
+
+    }
+    .projects-slider{
+      padding: 20px;
+      display: block;
+      width: 50%;
+      height: 100% ;
+    }
+
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .projects-page {
+    min-height: 700px;
+    .project-container {
+
+      .projects-pictures {
+      }
+
+      .projects-slider {
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .project-container{
+    .projects-pictures{
+      width: 100% !important;
+    }
+    .projects-slider{
+      width: 100% !important;
+    }
+
+  }
+
+}

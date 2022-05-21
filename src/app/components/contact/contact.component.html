@@ -1,0 +1,42 @@
+<div class="contact-page">
+  <div class="title">Contact</div>
+  <div class="contact-container">
+    <div class="form-container">
+      <div class="contact"></div>
+      <div class="contact"></div>
+<!--      <img class="contact" src="../../../assets/img/contact-us.svg" alt="contact">-->
+      <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name" placeholder="name">
+        <div class="error" *ngIf="(registerFormControl['name'].touched) && registerFormControl['name'].errors?.['required']">
+          *Name is required!
+        </div>
+        <label for="email">Email:</label>
+        <input type="text"  id="email"  formControlName="email" placeholder="email">
+        <div class="error" *ngIf="(registerFormControl['email'].touched) && registerFormControl['email'].errors?.['required']">
+          *Email is required!
+        </div>
+        <div class="error" *ngIf="(registerFormControl['email'].touched) && registerFormControl['email'].errors?.['email']">
+          Email is not valid!
+        </div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" formControlName="subject" placeholder="subject">
+        <div class="error"  *ngIf="(registerFormControl['subject'].touched) && registerFormControl['subject'].errors?.['required']">
+          *Subject is required!
+        </div>
+        <label for="description">Description:</label>
+        <textarea  rows="4" id="description" formControlName="description" placeholder="description" ></textarea>
+        <div class="error" *ngIf="(registerFormControl['description'].touched) && registerFormControl['description'].errors?.['required']">
+          *Description is required!
+        </div>
+
+        <button class="submit-btn" type="submit" [disabled]="form.invalid">Send Message</button>
+      </form>
+      <img class="envelop" src="../../../assets/img/envelop.svg" alt="envelop">
+      <span id="keep-in-touch">Get in touch</span>
+    </div>
+    <div class="center copyright">
+      Copyright &copy; 2022, All Rights Reserved
+    </div>
+  </div>
+</div>

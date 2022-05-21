@@ -1,0 +1,33 @@
+<div class="experience" *ngFor="let experience of experienceDetail">
+  <div class="work-period">
+    <div class="date-box">
+      <div class="month">{{getMonth(experience?.startDate)}}</div>
+      <div class="year">{{getYear(experience?.startDate)}}</div>
+    </div>
+    <div class="fromTo">
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
+    <div class="date-box" *ngIf="experience?.endDate !== currentDate;else now">
+      <div class="month">{{getMonth(experience?.endDate)}}</div>
+      <div class="year">{{getYear(experience?.endDate)}}</div>
+    </div>
+    <ng-template #now>
+      <div class="date-box now">
+        {{getYear(experience?.endDate)}}
+      </div>
+    </ng-template>
+  </div>
+  <div class="company-info">
+    <h3 class="company-name bold">{{experience.companyName | uppercase}} </h3>
+    <h4  class="job-title"> <em class="bold">{{experience?.jobTitle}}</em> ({{experience?.employmentType}})</h4>
+    <h5 class="industry-category"><b>Industry Category: </b>{{experience?.industryCategory}}</h5>
+    <h5 class="country">{{experience?.country}} - {{experience?.city}}</h5>
+  </div>
+  <div class="tech-info">
+    <div class="technologies">Technologies and Languages
+      <ul>
+        <li *ngFor="let item of experience?.technologies">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

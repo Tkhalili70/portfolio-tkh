@@ -1,0 +1,9 @@
+<nav class="menu sticky">
+<!--  <div class="menu-item"   [class]="selectedTitle == item.title ? 'selected-menu' : ''" *ngFor="let item of menu" (click)="navigate(item.title)">-->
+  <div class="menu-item"  *ngFor="let item of menu" (click)="navigate(item.title)">
+    <span *ngIf="innerWidth > 500;else iconShow"> {{item.title | uppercase}}</span>
+    <ng-template #iconShow>
+      <i  [class]="item.icon" aria-hidden="true" [tooltip]="item.title"></i>
+    </ng-template>
+  </div>
+</nav>
