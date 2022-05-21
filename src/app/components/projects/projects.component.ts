@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
       gitAddress:'' ,
       description:'Personal Portfolio',
       language:'Angular',
-      img:'../../../assets/img/portfolio.png'
+      img:'./././assets/img/portfolio.png'
     },
     // {
     //   title:'Calculator' ,
@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
     //   gitAddress:'https://github.com/Tkhalili70/calculator-prj' ,
     //   description:'Calculator Project',
     //   language:'Angular',
-    //   img:'../../../assets/img/calculator.png'
+    //   img:'./././assets/img/calculator.png'
     // },
     {
       title:'RoboFriends' ,
@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
       gitAddress:'https://github.com/Tkhalili70/robofriends' ,
       description:'Search a robot name',
       language:'React',
-      img:'../../../assets/img/robofriends.png'
+      img:'./././assets/img/robofriends.png'
     },
     {
       title:'Form' ,
@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
       gitAddress:'https://github.com/Tkhalili70/robofriends' ,
       description:'Form you can add address and visibility based on user role , it also has push notification',
       language:'Angular',
-      img:'../../../assets/img/auth-form-pwa.png'
+      img:'./././assets/img/auth-form-pwa.png'
     },
     {
       title:'Travelly' ,
@@ -46,7 +46,7 @@ export class ProjectsComponent implements OnInit {
       gitAddress:'https://github.com/Tkhalili70/html-css-try' ,
       description:'Travelly site',
       language:'HTML/CSS',
-      img:'../../../assets/img/travelly.png'
+      img:'./././assets/img/travelly.png'
     },
     {
       title:'Twitter' ,
@@ -54,7 +54,7 @@ export class ProjectsComponent implements OnInit {
       gitAddress:'https://github.com/Tkhalili70/twitter-project' ,
       description:'twitter-project',
       language:'HTML/CSS',
-      img:'../../../assets/img/twitter.png'
+      img:'./././assets/img/twitter.png'
     },
 
   ];
