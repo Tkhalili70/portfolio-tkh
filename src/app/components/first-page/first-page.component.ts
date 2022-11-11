@@ -20,7 +20,7 @@ export class FirstPageComponent implements OnInit {
   }
 
   onDownloadCV(){
-      window.open("./././assets/resume-khalili.en.pdf");
+      window.open("./././assets/resume-tannaz-khalili.english.pdf");
   }
 
 }
