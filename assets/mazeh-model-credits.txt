@@ -1,0 +1,9 @@
+hamburger, гамбургер, food, big-hamburger
+Author: usp05 (https://sketchfab.com/usp05)
+Source: https://sketchfab.com/3d-models/hamburger-food-big-hamburger-a23e498da6ea44f081b00f2c3a0bdfde
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Original license and author metadata are embedded in the GLB asset.
+Distribution source: https://github.com/mindset-code/burger-house-3d/blob/main/public/hamburger__food_big-hamburger.glb
+Changes: embedded texture resized to 1536px and recompressed as JPEG; binary buffer repacked. Geometry unchanged.
+This is a reference model, not a scan of Mazeh restaurant products. Source node names indicate Tripo tooling; no claim of photogrammetry is made.
